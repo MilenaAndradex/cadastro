@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8"/>
+        <title> exemlo</title>
+        <link rel="stylesheet" href="c.css">
+        <script type="text/javascript" src="b.js" ></script>
+
+    </head>
+    <body>
+
+        <form id="form">
+
+        <h2>Cadastro</h2>
+        Nome: <input type="text" autofocus="autofocus" required="required"/> 
+        <br> <br>
+        Data de nascimento: <input type="text" maxlength="10" required="required" id="txtdata" onkeyup="mask_date();" />
+        <br> <br>
+        CPF: <input type="text" required="required" id="txtcpf" maxlength="14" onkeyup="mask_cpf();"/>
+        <br> <br>
+        Endereço: <input type="text" required="required" id="txtend"  />
+        <br> <br>
+        CEP: <input type="text" required="required" id="txtcep" maxlength="9" onkeyup="mask_cep();" />
+        <br> <br>
+        Telefone: <input type="text" required="required" id="txttel" onkeyup="mask_tel();"/>
+        <br> <br>
+       
+        <button class="button-62" role="button">Cadastrar</button>
+        </form>
+
+    </body>
+</html>
