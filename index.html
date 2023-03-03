@@ -8,25 +8,37 @@
 
     </head>
     <body>
+        <div id="div1" class="container">
+            <div class="box">
 
-        <form id="form">
+                <form id="form">
 
-        <h2>Cadastro</h2>
-        Nome: <input type="text" autofocus="autofocus" required="required"/> 
-        <br> <br>
-        Data de nascimento: <input type="text" maxlength="10" required="required" id="txtdata" onkeyup="mask_date();" />
-        <br> <br>
-        CPF: <input type="text" required="required" id="txtcpf" maxlength="14" onkeyup="mask_cpf();"/>
-        <br> <br>
-        Endereço: <input type="text" required="required" id="txtend"  />
-        <br> <br>
-        CEP: <input type="text" required="required" id="txtcep" maxlength="9" onkeyup="mask_cep();" />
-        <br> <br>
-        Telefone: <input type="text" required="required" id="txttel" onkeyup="mask_tel();"/>
-        <br> <br>
-       
-        <button class="button-62" role="button">Cadastrar</button>
-        </form>
+                <h2>Cadastro</h2>
+                <label for="nome">Nome:</label>
+                <input type="text" autofocus="autofocus" required="required"/> 
+                <br> 
+                <label for="data">Data de Nascimento:</label>
+                <input type="text" maxlength="10" required="required" id="txtdata" onkeyup="mask_date();" />
+                <br> 
+                <label for="cpf">CPF:</label> 
+                <input type="text" required="required" id="txtcpf" maxlength="14" onkeyup="mask_cpf();"/>
+                <br> 
+                <label for="endereço">Endereço: </label>
+                <input type="text" required="required" id="txtend"  />
+                <br> 
+                <label for="cep">CEP:</label> 
+                <input type="text" required="required" id="txtcep" maxlength="9" onkeyup="mask_cep();" />
+                <br> 
+                <label for="telefone">Telefone:</label> 
+                <input type="text" required="required" id="txttel" onkeyup="mask_tel();"/>
+                <br> 
+            
+                <div class="bt">
+                <button class="button-62" role="button">Cadastrar</button>
+                </div>
+                </form>
+            </div>
+        </div>
 
     </body>
 </html>

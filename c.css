@@ -1,16 +1,20 @@
 body {
-    background-color: 	#D8BFD8;
+    background-color: 	#020102;
   }
+@font-face {
+    font-family: DM Sans;
+     src: url('./DMSans-Regular.ttf');
+}
 
   h2 {
-    color: white;
+    color: #FFFFFF;
     text-align: center;
-    font-family: Helvetica;
+    font-family: 'DM Sans';
     text-shadow: 
-             -1px -1px 0px #756775, 
-             -1px 1px 0px #756775,                    
-              1px -1px 0px #756775,                  
-              1px 0px 0px #756775;
+             -1px -1px 0px #1a0d1a, 
+             -1px 1px 0px #1a0d1a,                    
+              1px -1px 0px #1a0d1a,                  
+              1px 0px 0px #1a0d1a;
   }
 
 input {
@@ -20,17 +24,17 @@ input {
     box-sizing: border-box;
   }
 input[type=text]:focus {
-    background-color: #E6E6FA;
+    background-color: #c880ff;
   }
 
 .button-62 {
-  background: linear-gradient(to bottom right, #756775, #D8BFD8);
+  background: linear-gradient(to bottom right, #8956f1, #c880ff);
   border: 0;
   border-radius: 12px;
   color: #FFFFFF;
   cursor: pointer;
   display: inline-block;
-  font-family: -apple-system,system-ui,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+  font-family: 'DM Sans';
   font-size: 16px;
   font-weight: 500;
   line-height: 2.5;
@@ -43,12 +47,38 @@ input[type=text]:focus {
   -webkit-user-select: none;
   touch-action: manipulation;
   white-space: nowrap;
+  position: absolute;
+  left: 620px;
+  top: 565px;
+
+
+  
 }
 
 .button-62:not([disabled]):focus {
-  box-shadow: 0 0 .25rem rgba(0, 0, 0, 0.5), -.125rem -.125rem 1rem rgba(128,128,128), .125rem .125rem 1rem rgba(147,112,219);
+  box-shadow: 0 0 .25rem rgba(0, 0, 0, 0.5), -.125rem -.125rem 1rem #020102, .125rem .125rem 1rem #020102;
 }
 
 .button-62:not([disabled]):hover {
-  box-shadow: 0 0 .25rem rgba(0, 0, 0, 0.5), -.125rem -.125rem 1rem rgba(128,128,128), .125rem .125rem 1rem rgba(147,112,219);
+  box-shadow: 0 0 .25rem rgba(0, 0, 0, 0.5), -.125rem -.125rem 1rem #020102, .125rem .125rem 1rem #020102;
 }
+
+.container {
+  height: 100vh;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  font-family: 'DM Sans';
+  color: #FFFFFF;
+
+  
+  }
+  .box {
+  width: 300px;
+  height: 500px;
+  background-color: #241b35;
+  border: 30px solid #241b35; 
+  border-radius: 10px;
+  
+  }
